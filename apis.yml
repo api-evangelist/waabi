@@ -1,8 +1,25 @@
 aid: waabi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/waabi.png
 name: Waabi
-description: 'Waabi is a company surfaced as a portfolio company of 8vc, khosla-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Waabi is a Toronto-based artificial intelligence company founded in 2021 by Raquel
+  Urtasun, pioneering Physical AI for autonomous driving and starting with self-driving trucks. Its
+  flagship product, the Waabi Driver, pairs a generative-AI, end-to-end interpretable and verifiable
+  autonomy stack with sensors and compute, trained and validated in Waabi World, a high-fidelity
+  neural closed-loop simulator, and designed for factory-level OEM integration and large-scale
+  commercialization. Waabi is a product/technology company: as of this enrichment pass it publishes
+  no public developer API, SDK, MCP server, or developer portal, so this profile carries identity and
+  domain-security signal rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/waabi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Autonomous Vehicles
+- Self Driving
+- Trucking
+- Robotics
+- Simulation
+- Physical Ai
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/waabi-domain-security.yml
 - type: Website
   url: https://waabi.ai
+- type: Blog
+  url: https://waabi.ai/insights
+- type: PrivacyPolicy
+  url: https://waabi.ai/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
